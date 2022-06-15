@@ -1,0 +1,18 @@
+package com.greatlearning.officework.main;
+import com.greatlearning.officework.departments.*;
+import com.greatlearning.officework.services.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		SuperDepartment obj=new AdminDepartment();
+		MyConsole.Print(obj.departmentName());
+		MyConsole.Print(obj.getTodaysWork());
+		MyConsole.Print(obj.getWorkDeadline());
+		MyConsole.Print(obj.isTodayAHoliday());
+		MyConsole.Print(" ");
+		
+	}
+
+}

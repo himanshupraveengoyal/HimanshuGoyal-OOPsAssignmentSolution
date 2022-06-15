@@ -1,0 +1,32 @@
+package com.greatlearning.officework.main;
+import com.greatlearning.officework.departments.*;
+import com.greatlearning.officework.services.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		AdminDepartment adminDepartment=new AdminDepartment();
+		MyConsole.Print("Welcome to "+adminDepartment.departmentName());
+		MyConsole.Print(adminDepartment.getTodaysWork());
+		MyConsole.Print(adminDepartment.getWorkDeadline());
+		MyConsole.Print(adminDepartment.isTodayAHoliday());
+		MyConsole.Print(" ");
+		
+		HrDepartment hrDepartment=new HrDepartment();
+		MyConsole.Print("Welcome to "+hrDepartment.departmentName());
+		MyConsole.Print(hrDepartment.doActivity());
+		MyConsole.Print(hrDepartment.getTodaysWork());
+		MyConsole.Print(hrDepartment.getWorkDeadline());
+		MyConsole.Print(hrDepartment.isTodayAHoliday());
+		MyConsole.Print(" ");
+		
+		TechDepartment techDepartment=new TechDepartment();
+		MyConsole.Print("Welcome to "+techDepartment.departmentName());
+		MyConsole.Print(techDepartment.getTodaysWork());
+		MyConsole.Print(techDepartment.getWorkDeadline());
+		MyConsole.Print(techDepartment.getTechStackInformation());
+		MyConsole.Print(techDepartment.isTodayAHoliday());
+	}
+
+}

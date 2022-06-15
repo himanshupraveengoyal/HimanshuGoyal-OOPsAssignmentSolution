@@ -1,0 +1,16 @@
+package com.greatlearning.officework.main;
+import com.greatlearning.officework.departments.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		SuperDepartment obj=new AdminDepartment();
+		obj.departmentName();
+		obj.getTodaysWork();
+		obj.getTodaysWork();
+		obj.isTodayAHoliday();
+
+	}
+
+}
